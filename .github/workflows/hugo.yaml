@@ -47,7 +47,7 @@ jobs:
           submodules: recursive
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v6  # Updated to v6 if available; revert to v5 if not
+        uses: actions/configure-pages@v5  # Updated to v6 if available; revert to v5 if not
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Build with Hugo
